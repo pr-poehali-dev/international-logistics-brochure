@@ -143,7 +143,7 @@ const Index = () => {
               <div className="grid h-10 w-10 shrink-0 place-items-center rounded-full border-2 border-[#1B5BC9] text-[#1B5BC9]">
                 <Icon name="Phone" size={18} />
               </div>
-              <p className="text-[14px] text-[#1a1a1a]">+7 917 138-54-44</p>
+              <p className="text-[14px] text-[#1a1a1a]">+7 927 719-04-63</p>
             </div>
 
           </div>

@@ -126,7 +126,7 @@ const Index = () => {
               </div>
               <div>
                 <p className="font-semibold text-[15px] text-[#1a1a1a] leading-tight">
-                  {lang === 'ru' ? 'Евгений,' : 'Evgeny,'}
+                  {lang === 'ru' ? 'Егор,' : 'Egor,'}
                 </p>
                 <p className="text-[13px] text-[#666] leading-tight">{t.role}</p>
               </div>
@@ -136,14 +136,14 @@ const Index = () => {
               <div className="grid h-10 w-10 shrink-0 place-items-center rounded-full border-2 border-[#1B5BC9] text-[#1B5BC9]">
                 <Icon name="Mail" size={18} />
               </div>
-              <p className="text-[14px] text-[#1a1a1a]">u2@cargo100.ru</p>
+              <p className="text-[14px] text-[#1a1a1a]">m6.volga@mail.ru</p>
             </div>
 
             <div className="flex items-center gap-4">
               <div className="grid h-10 w-10 shrink-0 place-items-center rounded-full border-2 border-[#1B5BC9] text-[#1B5BC9]">
                 <Icon name="Phone" size={18} />
               </div>
-              <p className="text-[14px] text-[#1a1a1a]">+7 927 719-04-63</p>
+              <p className="text-[14px] text-[#1a1a1a]">+7 917 101-74-44</p>
             </div>
 
           </div>

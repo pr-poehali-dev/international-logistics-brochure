@@ -22,37 +22,42 @@ const Index = () => {
     <div className="min-h-screen bg-white font-sans text-brand-navy">
       <div className="mx-auto max-w-[820px] shadow-2xl">
         {/* HERO */}
-        <header className="relative overflow-hidden bg-gradient-to-b from-[#EAF1FB] to-white px-8 pt-10 pb-6">
-          <div className="absolute right-6 top-8 flex gap-2 text-4xl">
+        <header className="relative overflow-hidden bg-gradient-to-b from-[#F3F6FC] to-white px-8 pt-12 pb-6">
+          <div className="absolute left-0 top-0 h-1.5 w-full bg-gradient-to-r from-brand-red via-white to-brand-blue" />
+          <div className="absolute right-6 top-9 flex gap-2 text-4xl">
             <span>🇨🇳</span>
             <span>🇷🇺</span>
           </div>
 
           <div className="flex items-center gap-3">
-            <div className="grid h-12 w-12 place-items-center rounded-lg bg-brand-navy">
+            <div className="grid h-12 w-12 place-items-center rounded-lg bg-brand-red">
               <Icon name="Container" size={26} className="text-white" />
             </div>
             <div>
-              <p className="font-display text-2xl font-bold tracking-wide text-brand-navy leading-none">
-                ВОЛГА<span className="text-brand-blue">ТРЕЙД</span>
+              <p className="font-display text-2xl font-bold tracking-wide leading-none">
+                <span className="text-brand-red">ВОЛГА</span>
+                <span className="text-brand-blue">ТРЕЙД</span>
               </p>
-              <p className="text-xs tracking-widest text-brand-blue/70">МЕЖДУНАРОДНАЯ ЛОГИСТИКА</p>
+              <p className="text-xs tracking-widest text-brand-navy/60">МЕЖДУНАРОДНАЯ ЛОГИСТИКА</p>
             </div>
           </div>
 
           <h1 className="mt-8 font-display text-5xl font-bold uppercase leading-[0.95] tracking-tight md:text-6xl">
-            Транспортно-
+            <span className="text-brand-navy">Транспортно-</span>
             <br />
-            логистические
+            <span className="text-brand-navy">логистические</span>
             <br />
-            <span className="text-brand-blue">услуги</span>
+            <span className="text-brand-red">услуги</span>
           </h1>
 
           <p className="mt-5 max-w-md text-lg leading-snug text-brand-navy/80">
             Организуем официальную доставку грузов из любого города Китая в любой город России.
           </p>
 
-          <div className="mt-5 h-1 w-20 rounded-full bg-brand-blue" />
+          <div className="mt-5 flex gap-1.5">
+            <div className="h-1.5 w-12 rounded-full bg-brand-red" />
+            <div className="h-1.5 w-12 rounded-full bg-brand-blue" />
+          </div>
         </header>
 
         {/* TRUCK IMAGE */}
@@ -63,18 +68,22 @@ const Index = () => {
 
         {/* SERVICES */}
         <section className="px-8 py-10">
-          <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-brand-blue">Наши услуги</p>
-          <h2 className="mt-1 font-display text-3xl font-bold uppercase leading-tight">
+          <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-brand-red">Наши услуги</p>
+          <h2 className="mt-1 font-display text-3xl font-bold uppercase leading-tight text-brand-navy">
             Прямые машины из внутренних провинций Китая
           </h2>
 
           <div className="mt-7 grid gap-4 sm:grid-cols-2">
-            {services.map((s) => (
+            {services.map((s, i) => (
               <div
                 key={s.title}
-                className="flex gap-4 rounded-xl border border-brand-blue/15 bg-[#F7FAFF] p-5 transition-shadow hover:shadow-md"
+                className="flex gap-4 rounded-xl border border-brand-navy/10 bg-[#F7FAFF] p-5 transition-shadow hover:shadow-md"
               >
-                <div className="grid h-11 w-11 shrink-0 place-items-center rounded-lg bg-brand-blue text-white">
+                <div
+                  className={`grid h-11 w-11 shrink-0 place-items-center rounded-lg text-white ${
+                    i % 2 === 0 ? 'bg-brand-red' : 'bg-brand-blue'
+                  }`}
+                >
                   <Icon name={s.icon} size={22} />
                 </div>
                 <div>
@@ -110,8 +119,11 @@ const Index = () => {
         </section>
 
         {/* CONTACTS */}
-        <footer className="bg-gradient-to-br from-[#0A1F45] to-brand-navy px-8 py-10 text-white">
-          <h3 className="font-display text-2xl font-bold uppercase">Сделаем расчёт бесплатно</h3>
+        <footer className="relative bg-gradient-to-br from-[#0A1F45] to-brand-navy px-8 py-10 text-white">
+          <div className="absolute left-0 top-0 h-1.5 w-full bg-gradient-to-r from-brand-blue via-white to-brand-red" />
+          <h3 className="font-display text-2xl font-bold uppercase">
+            Сделаем расчёт <span className="text-brand-red">бесплатно</span>
+          </h3>
           <p className="mt-2 max-w-md text-white/70">
             Подберём маршрут, оформим экспортные документы и проведём таможню под ключ.
           </p>
@@ -131,7 +143,7 @@ const Index = () => {
             ))}
           </div>
 
-          <button className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand-sky px-7 py-3 font-semibold text-white transition-transform hover:scale-105">
+          <button className="mt-8 inline-flex items-center gap-2 rounded-full bg-brand-red px-7 py-3 font-semibold text-white transition-transform hover:scale-105 hover:bg-brand-crimson">
             Оставить заявку
             <Icon name="ArrowRight" size={18} />
           </button>

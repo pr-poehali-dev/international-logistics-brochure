@@ -27,6 +27,8 @@ export default {
 					navy: '#0F2C5C',
 					blue: '#1B5BC9',
 					sky: '#3D8BFD',
+					red: '#D52B1E',
+					crimson: '#B01C12',
 				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

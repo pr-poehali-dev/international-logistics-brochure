@@ -1,6 +1,6 @@
 import Icon from '@/components/ui/icon';
 
-const TRUCK_IMG = 'https://cdn.poehali.dev/projects/f0cc9908-1e16-4917-a61c-6353efaf5cc6/files/31dc878f-2910-41a2-9978-7d07395e17ae.jpg';
+const TRUCK_IMG = 'https://cdn.poehali.dev/projects/f0cc9908-1e16-4917-a61c-6353efaf5cc6/files/a7c581f2-61f9-4d3c-9297-b34104c5785e.jpg';
 
 const Index = () => {
   return (
